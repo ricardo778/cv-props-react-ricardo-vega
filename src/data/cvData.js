@@ -1,6 +1,6 @@
 // src/data/cvData.js
 export const cabecera = {
-  nombre: "Nombre del Aprendiz",
+  nombre: "Ricardo Andres Vega Perez",
   profesion: "Desarrollador UI Frontend"
 };
 
