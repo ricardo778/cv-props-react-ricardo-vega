@@ -1,15 +1,13 @@
-export default function Experiencia() {
-  const experiencia = [
-    { id: 1, puesto: "Desarrollador Full Stack", empresa: "microsoft", periodo: "2026-2026" },
-    { id: 2, puesto: "Aprendiz", empresa: "SENA", periodo: "2025-2026" }
-  ];
+// src/components/Experiencia.jsx
+import React from "react";
 
-  // Renderiza condicionalmente si no hay experiencia
-  if (experiencia.length === 0) {
+export default function Experiencia({ trabajos }) {
+  if (!trabajos || trabajos.length === 0) {
     return (
       <section>
         <h3>Experiencia Profesional</h3>
         <p>No se ha registrado experiencia profesional.</p>
+        <hr />
       </section>
     );
   }
@@ -18,12 +16,13 @@ export default function Experiencia() {
     <section>
       <h3>Experiencia Profesional</h3>
       <ul>
-        {experiencia.map((exp) => (
-          <li key={exp.id}>
-            <strong>{exp.puesto}</strong> - {exp.empresa} ({exp.periodo})
+        {trabajos.map(({ id, puesto, empresa, periodo }) => (
+          <li key={id}>
+            <strong>{puesto}</strong> - {empresa} ({periodo})
           </li>
         ))}
       </ul>
+      <hr />
     </section>
   );
 }
