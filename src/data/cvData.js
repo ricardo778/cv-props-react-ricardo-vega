@@ -27,9 +27,9 @@ export const experiencia = [
   },
   {
     id: 2,
-    puesto: "Instructor TIC",
+    puesto: "Aprendiz",
     empresa: "SENA",
-    periodo: "2020-2022"
+    periodo: "2025-2026"
   }
 ];
 

@@ -1,12 +1,22 @@
-# React + Vite
+Breve descripción de las funcionalidades añadidas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Agregué un formulario dinámico para añadir tecnologías, habilidades y proyectos.
+Los datos se manejan desde el componente padre para mantener todo sincronizado.
+Incluí componentes reutilizables que usan props y desestructuración para mostrar la información.
+La app soporta cambios dinámicos en la visualización según el estado actual.
 
-Currently, two official plugins are available:
+Capturas de pantalla del formulario y habilidades funcionando
+![cap 1](./src/cap%201.png)
+![cap 2](./src/cap%202.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Instrucciones para ejecutar el proyecto (npm install + npm run dev)
 
-## Expanding the ESLint configuration
+Abre la terminal y ve a la carpeta del proyecto.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ejecuta npm install para instalar las dependencias.
+
+Luego, ejecuta npm run dev para iniciar el servidor de desarrollo.
+
+Abre el navegador en la dirección que muestra la terminal.
+
+¡Listo! La app debería estar funcionando.
