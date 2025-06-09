@@ -32,6 +32,7 @@ function App() {
       <Perfil {...perfil} />
       <Educacion estudios={educacion} />
       <Experiencia trabajos={experiencia} />
+      <StackTecnologias tecnologias={tecnologias} />
 
       {/* Componente con evento + estado */}
       <FormularioTecnologia onAgregar={agregarTecnologia} />
